@@ -1,7 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* primary */
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --light-grayish-red: hsl(14, 92%, 95%);
+  --light-red: hsl(15, 100%, 70%);
+  --pale-blue: hsl(226, 100%, 87%);
+
+  /* neutral */
+  /* white */
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --light-grayish: hsl(224, 65%, 95%);
+  --light-grayish-blue: hsl(223, 50%, 87%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+button {
+  font-family: "Manrope", sans-serif;
+}
+
 .attribution {
+  position: fixed;
+  bottom: 2.5vmin;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.pricing__card {
+  border: 1px solid red;
 }
