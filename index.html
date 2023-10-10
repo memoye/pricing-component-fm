@@ -8,11 +8,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon-32x32.png">
   <title>Frontend Mentor | Interactive pricing component</title>
   <link rel="stylesheet" href="./src/styles.css">
-  <script src="./src/script.js"></script>
+  <script defer src="./src/script.js"></script>
 </head>
 
 <body>
-
   <main>
     <section class="intro">
       <h1 class="intro__title">Simple, traffic-based pricing</h1>
@@ -22,23 +21,24 @@
     <section class="pricing__card">
       <div>
         <div class="pricing__card__titleContainer">
-          <h2 class="pricing__card__title"><span id="views">0</span> Pageviews</h2>
+          <h2 class="pricing__card__title"><span id="viewsAmt">0</span> Pageviews</h2>
           <p class="pricing__card__priceContainer"> <span class="pricing__card__price">$<span id="price">0</span></span>
             / month </p>
-        </div>
-        <div class="sliderContainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="viewsSelect">
+          <div class="sliderContainer">
+            <input type="range" min="1" max="100" value="1" class="slider" id="viewsSelect">
+          </div>
         </div>
         <div class="pricing__card__toggle">
           <p class="pricing__card__toggle__option">Monthly Billing</p>
-          <button class="pricing__card__toggle--btn" id="toggle"><span class="circle"></span></button>
+          <button class="pricing__card__toggle--btn" id="toggle">
+            <span class="circle"></span>
+          </button>
           <div class="pricing__card__toggle__option">
             <p>Yearly Billing </p>
             <p class="pricing__card__toggle__discount">25% <span
                 class="pricing__card__toggle__discount__desc">discount</span></p>
           </div>
         </div>
-
       </div>
 
       <div class="pricing__card__features">
@@ -55,10 +55,9 @@
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8"
         target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/memoye">Memoye</a>.
+      Coded with ❤️‍🩹 by <a href="https://github.com/memoye">Memoye</a>.
     </div>
   </main>
-
 </body>
 
 </html>
