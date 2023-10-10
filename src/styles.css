@@ -6,6 +6,19 @@
   padding: 0;
 }
 
+.attribution {
+  position: fixed;
+  bottom: 2.5vmin;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 :root {
   /* primary */
   --soft-cyan: hsl(174, 77%, 80%);
@@ -21,29 +34,144 @@
   --light-grayish-blue: hsl(223, 50%, 87%);
   --grayish-blue: hsl(225, 20%, 60%);
   --dark-desaturated-blue: hsl(227, 35%, 25%);
+
+  font-size: 15px;
 }
 
 body {
+  background: url("./assets/bg-pattern.svg") no-repeat left -5vh;
   font-family: "Manrope", sans-serif;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  font-size: 15px;
+  max-width: 1440px;
+}
+
+main {
+  width: 100vw;
+  max-width: 500px;
 }
 
 button {
-  font-family: "Manrope", sans-serif;
+  font-family: inherit;
 }
 
-.attribution {
-  position: fixed;
-  bottom: 2.5vmin;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 11px;
+.intro {
+  background: url("./assets/pattern-circles.svg") no-repeat center / contain;
+  padding-block: 2.5em;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.intro__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--dark-desaturated-blue);
+}
+
+.intro__desc {
+  color: var(--grayish-blue);
 }
 
 .pricing__card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.pricing__card > div:first-child {
+  padding: 1em;
+}
+
+.pricing__card__titleContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   border: 1px solid red;
+}
+
+.pricing__card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.pricing__card__views {
+}
+
+.pricing__card__priceContainer {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.pricing__card__price {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.sliderContainer {
+}
+
+.pricing__card__toggle {
+  display: flex;
+}
+
+.pricing__card__toggle__option {
+  display: flex;
+}
+
+.pricing__card__toggle--btn {
+  all: unset;
+  background-color: var(--light-grayish-blue);
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  width: 2.75rem;
+}
+
+.pricing__card__toggle--btn .circle {
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  transition: margin 200ms;
+}
+
+.pricing__card__toggle--btn:hover {
+  background-color: var(--soft-cyan);
+}
+
+.pricing__card__toggle--btn:focus .circle {
+  margin-left: 1.2rem; /*active - apply to button on toggle*/
+}
+
+.pricing__card__toggle__option {
+}
+
+.pricing__card__toggle__discount {
+}
+
+.pricing__card__toggle__discount__desc {
+}
+
+.pricing__card__features {
+  border-top: 1px solid hsla(225, 20%, 60%, 0.2);
+  padding: 1em;
+}
+
+.pricing__card__features ul {
+  list-style-position: inside;
+}
+
+.pricing__card__features ul li {
+}
+
+.pricing__card--cta {
 }

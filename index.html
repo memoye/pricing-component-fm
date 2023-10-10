@@ -14,31 +14,35 @@
 <body>
 
   <main>
-    <h1>Simple, traffic-based pricing</h1>
-    <p class="intro">Sign-up for our 30-day trial. No credit card required.</p>
+    <section class="intro">
+      <h1 class="intro__title">Simple, traffic-based pricing</h1>
+      <p class="intro__desc">Sign-up for our 30-day trial. No credit card required.</p>
+    </section>
 
-    <div class="pricing__card">
-      <div class="pricing__card__title">
-        <h2 class="pricing__card__views"><span id="views"></span> Pageviews</h2>
-        <p class="pricing__card__price"> $<span id="price">0</span> / month </p>
-      </div>
-
-      <div class="sliderContainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="viewsSelect">
-      </div>
-
-      <div class="pricing__card__toggle">
-        <p class="pricing__card__toggle__option">Monthly Billing</p>
-        <button class="pricing__card__toggle--btn" id="toggle"><span class="circle"></span></button>
-        <div class="pricing__card__toggle__option">
-          <p>Yearly Billing </p>
-          <p class="pricing__card__toggle__discount">25% <span
-              class="pricing__card__toggle__discount__desc">discount</span></p>
-        </div>
-      </div>
-
+    <section class="pricing__card">
       <div>
-        <ul class="pricing__card__features">
+        <div class="pricing__card__titleContainer">
+          <h2 class="pricing__card__title"><span id="views">0</span> Pageviews</h2>
+          <p class="pricing__card__priceContainer"> <span class="pricing__card__price">$<span id="price">0</span></span>
+            / month </p>
+        </div>
+        <div class="sliderContainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="viewsSelect">
+        </div>
+        <div class="pricing__card__toggle">
+          <p class="pricing__card__toggle__option">Monthly Billing</p>
+          <button class="pricing__card__toggle--btn" id="toggle"><span class="circle"></span></button>
+          <div class="pricing__card__toggle__option">
+            <p>Yearly Billing </p>
+            <p class="pricing__card__toggle__discount">25% <span
+                class="pricing__card__toggle__discount__desc">discount</span></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing__card__features">
+        <ul>
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
           <li>Email reports</li>
@@ -46,7 +50,7 @@
 
         <button class="pricing__card--cta">Start my trial</button>
       </div>
-    </div>
+    </section>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8"
