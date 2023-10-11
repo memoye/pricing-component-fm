@@ -57,12 +57,10 @@ function toggleDiscount(val) {
     if (applyDiscount === false) {
         applyDiscount = true
         price.innerText = (val * 0.75).toFixed(2)
-        // return val * 0.75
     } else {
         // toggleHandle.classList.remove('toggled')
         applyDiscount = false
         price.innerText = (val).toFixed(2)
-        // return val
     }
 }
 
