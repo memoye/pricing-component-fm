@@ -395,7 +395,10 @@ button {
   }
 
   .pricing__card__toggle {
+    font-size: 0.75rem;
     gap: 0.5rem;
+    justify-content: center;
+    margin: 0;
   }
 
   .pricing__card__toggle p {
