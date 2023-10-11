@@ -51,13 +51,15 @@ function updateRangePrgress(val) {
 
 // handle discount toggle and update ui with current price
 function toggleDiscount(val) {
+    toggleHandle.classList.toggle('toggled')
+    toggleHandle.classList.toggle('handleToggled')  //for firefox
+    // toggle.classList.toggle('toggledFF')
     if (applyDiscount === false) {
-        toggleHandle.classList.add('toggled')
         applyDiscount = true
         price.innerText = (val * 0.75).toFixed(2)
         // return val * 0.75
     } else {
-        toggleHandle.classList.remove('toggled')
+        // toggleHandle.classList.remove('toggled')
         applyDiscount = false
         price.innerText = (val).toFixed(2)
         // return val
@@ -89,9 +91,6 @@ function numFormatter(num) {
         return num.toString();
     }
 }
-
-
-
 
 const plans = data.map(plan => new Plan({ ...plan }))
 

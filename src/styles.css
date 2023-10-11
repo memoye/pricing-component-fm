@@ -285,7 +285,13 @@ button {
 }
 
 .pricing__card__toggle--btn:has(.toggled) .circle {
-  margin-inline: 1.2rem 0; /*active - apply to button on toggle*/
+  /*active - apply to button on toggle*/
+  margin-inline: 1.2rem 0 !important;
+}
+
+.handleToggled {
+  margin-left: 1.2rem !important;
+  margin-right: 0 !important;
 }
 
 .pricing__card__toggle__option {
