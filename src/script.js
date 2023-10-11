@@ -53,7 +53,7 @@ function updateRangePrgress(val) {
 function toggleDiscount(val) {
     toggleHandle.classList.toggle('toggled')
     toggleHandle.classList.toggle('handleToggled')  //for firefox
-    // toggle.classList.toggle('toggledFF')
+
     if (applyDiscount === false) {
         applyDiscount = true
         price.innerText = (val * 0.75).toFixed(2)
