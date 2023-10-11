@@ -401,4 +401,8 @@ button {
   .pricing__card__toggle p {
     text-wrap: nowrap;
   }
+
+  .pricing__card__toggle__discount::before {
+    content: "-";
+  }
 }
