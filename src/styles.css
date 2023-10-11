@@ -350,7 +350,7 @@ button {
   filter: brightness(100%);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .pricing__card__titleContainer {
     grid-template-columns: auto;
     grid-template-areas:
